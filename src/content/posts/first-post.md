@@ -3,12 +3,11 @@ title: First post
 slug: first-post
 description: Lorem ipsum dolor sit amet
 category:
-  - One
+  - Food
 tags:
-  - Tailwind
-  - Astro
-  - Jamstack
-pubDate: 2023-09-01
+  - Minnesota
+  - Travel
+pubDate: 2024-04-26
 cover: src/images/visvrs6.webp
 coverAlt: VisVrs-Lorem ipsum dolor sit amet
 author: VV
