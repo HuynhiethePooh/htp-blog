@@ -6,7 +6,7 @@ category:
   - Food
 tags:
   - Eats
-  - Travel
+  - Portland
 pubDate: 2023-12-05
 cover: src/images/portland-23-post-pics/yoshi-truck.jpeg
 coverAlt: VisVrs-Aliases
