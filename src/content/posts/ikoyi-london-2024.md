@@ -6,6 +6,9 @@ category:
   - Food
 tags:
   - Michelin
+  - London
+  - Travel
+  - Eats
 pubDate: 2024-02-21
 cover: src/images/ikoyi-post-pics/ikoyi-logo.jpeg
 coverAlt: VisVrs-Aliases
