@@ -1,0 +1,7 @@
+/* global.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Optional: centers the cards in the container */
+  }
