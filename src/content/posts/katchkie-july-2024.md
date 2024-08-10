@@ -31,3 +31,13 @@ Drop included:
 Yield:
 
 ![Basil Syrup](src/images/csa-july24-pics/simmer-basil-syrup.jpeg)
+
+
+
+I really enjoyed getting a mix of vegetables and having to figure out how everything fits into my week!
+I instantly saw the pumpkin, squash and zuchini and thought of a nice air fried mix for a meal. I use onions and 
+basil a lot for pickling and topping so that was easy to recognize I need to store them in jars!
+
+
+It was so satifying to see how fresh my veggies were, so the tomatoes and cucumbers didn't last very long. Whole foods just started carrying
+Cava's green goddess sauce so I knew i wanted to indulge in some of that with Cucumber as a snack. Maybe for future drops I'll find more creative ways to use everything, but for now I am still excited to actually have veggies that look great and taste just as good!
