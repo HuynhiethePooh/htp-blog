@@ -31,6 +31,10 @@ Drop included:
 Yield:
 
 ![Basil Syrup](src/images/csa-july24-pics/simmer-basil-syrup.jpeg)
+![Bacon Cabbage](src/images/csa-july24-pics/Bacon-cabbage.jpeg)
+![Cukes](src/images/csa-july24-pics/Cukes.jpeg)
+![Celery with PB](src/images/csa-july24-pics/Celery-pb.jpeg)
+![Pickled Onions](src/images/csa-july24-pics/Pickled-onions.jpeg)
 
 
 
