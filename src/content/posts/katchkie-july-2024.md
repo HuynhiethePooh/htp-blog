@@ -35,7 +35,7 @@ Yield:
 ![Cukes](src/images/csa-july24-pics/Cukes.jpeg)
 ![Pickled Onions](src/images/csa-july24-pics/Pickled-onions.jpeg)
 ![Bacon Cabbage](src/images/csa-july24-pics/bacon-cabbage.jpeg)
-![Red Celery](src/images/csa-july24-pics/red-celery.jpeg)
+![Red Celery](src/images/csa-july24-pics/red-celery.jpg)
 
 
 I really enjoyed getting a mix of vegetables and having to figure out how everything fits into my week!
