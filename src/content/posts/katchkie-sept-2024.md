@@ -66,11 +66,14 @@ Sweet Peppers with a Cheesy Japanese Mayo: Okay these look nasty but they were t
 Smashed Pototoes: I just don't know what else to do with so many pounds of potatoes in a week other than crushing them a bit and air frying them. I paired them along with a quick pesto aioli made of kewpie, pesto and lemon as a side dish to some dry aged steak!
 
 ![Steak and Potatoes](src/images/csa-sept24-pics/steak-and-potatoes.jpeg)
+
+Not pictured is the sweet potato, I took the single potato and just fried it in the air fryer to make a sort of baked potato, I had some leftover honey and unsalted butter and just topped it off with that! A very sweet and slightly savory fall snack.
+
 ## Freezing/Pickling/Etc.
 I would love to say that I found quick uses for all of my ingredients, but life doesn't always leave enough time and hunger to use all the vegetables. 
 
 I took the daikon and pickled it to have, but I'm not planning on having Banh Mi or any type of Korean dish anytime soon so they are just snacks for when I want to taste something with a hint of vinegar!
-
+![Daikons](src/images/csa-sept24-pics/daikons.jpeg)
 I don't want to use all the special colors of kale for something boring, but I can only eat so much Kale in a week, so I chopped and then froze a lot of it to add to my smoothies for extra nutrients.
 
 Regretably summer squash actually goes bad faster than you would think and I was sad to find that my smaller squash had some mold on it after coming back from a trip. You can't always make the most out of all groceries, but I'm hoping that I can continue to waste as little as possible 🙂 I am debating continuing the CSA next season, as it's a great opportunity to challenge yourself to intake more veggies, but it can truly be difficult to find enough uses for everything! 
