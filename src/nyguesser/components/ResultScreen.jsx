@@ -58,7 +58,7 @@ export default function ResultScreen({ result, round, totalRounds, onNext }) {
         <div className="map-panel">
           <Map
             style={{ width: '100%', height: '100%' }}
-            mapId={import.meta.env.VITE_GOOGLE_MAPS_MAP_ID}
+            mapId={import.meta.env.PUBLIC_GOOGLE_MAPS_MAP_ID}
             defaultCenter={restaurant}
             defaultZoom={13}
             gestureHandling="cooperative"

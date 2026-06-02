@@ -7,7 +7,7 @@ import FinalScreen from './components/FinalScreen'
 import './nyguesser.css'
 
 const TOTAL_ROUNDS = 5
-const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+const API_KEY = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY
 
 export default function NYGuesser() {
   const [gameState, setGameState] = useState('start')
