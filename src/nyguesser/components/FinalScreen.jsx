@@ -70,7 +70,7 @@ export default function FinalScreen({ results, onPlayAgain }) {
       <div className="final-map">
         <Map
           style={{ width: '100%', height: '100%' }}
-          mapId={import.meta.env.VITE_GOOGLE_MAPS_MAP_ID}
+          mapId={import.meta.env.PUBLIC_GOOGLE_MAPS_MAP_ID}
           defaultCenter={{ lat: 40.7128, lng: -74.006 }}
           defaultZoom={11}
           gestureHandling="cooperative"
