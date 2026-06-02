@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
-    "baseUrl": "/Users/danhuynh/Documents/htp-blog",
+    "baseUrl": ".",
     "verbatimModuleSyntax": true,
     "paths": {
       "@/components/*": [

@@ -33,6 +33,7 @@
 		"react-slick": "^0.30.2",
 		"sharp": "^0.33.2",
 		"slick-carousel": "^1.8.1",
-		"tailwindcss": "^3.4.1"
+		"tailwindcss": "^3.4.1",
+		"vue": "^3.5.35"
 	}
 }
