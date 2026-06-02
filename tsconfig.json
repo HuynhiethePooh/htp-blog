@@ -1,13 +1,26 @@
 {
-	"extends": "astro/tsconfigs/strictest",
-	"compilerOptions": {
-		"baseUrl": ".",
-		"verbatimModuleSyntax": true,
-		"paths": {
-			"@/components/*": ["src/components/*.astro"],
-			"@/layouts/*": ["src/layouts/*.astro"],
-			"@/utils": ["src/utils/*.mjs"]
-		}
-	},
-	"exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"]
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "baseUrl": "/Users/danhuynh/Documents/htp-blog",
+    "verbatimModuleSyntax": true,
+    "paths": {
+      "@/components/*": [
+        "src/components/*.astro"
+      ],
+      "@/layouts/*": [
+        "src/layouts/*.astro"
+      ],
+      "@/utils": [
+        "src/utils/*.mjs"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    ".vscode",
+    "dist"
+  ]
 }
