@@ -99,7 +99,7 @@ export default function GameScreen({ round, totalRounds, onSubmit }) {
                   ))}
                 </div>
               </div>
-              <div className="photo-overlay">Guess the location of this Manhattan restaurant</div>
+              <div className="photo-overlay">Guess the location of this New York restaurant</div>
             </>
           )}
         </div>
