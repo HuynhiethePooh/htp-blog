@@ -3,7 +3,9 @@ dist/
 
 # generated types
 .astro/
-.vercel/
+
+# netlify adapter output (SSR function bundle)
+.netlify/
 
 # dependencies
 node_modules/

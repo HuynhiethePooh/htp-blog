@@ -1,0 +1,357 @@
+{{RegulationSetInfobox
+|name = Regulation Set M-B
+|image = CPRSM-B.jpg
+|game = Champions
+|season = {{DL|Ranked Battles Seasons in Pokémon Champions|Season M-3}}<br>{{DL|Ranked Battles Seasons in Pokémon Champions|Season M-4}}<br>{{DL|Ranked Battles Seasons in Pokémon Champions|Season M-5}}
+|competition = {{DL|Online Competitions in Pokémon Champions|Monthly Challenge Series June 2026}}<br>{{DL|Online Competitions in Pokémon Champions|Monthly Challenge Series July 2026}}<!--<br>{{DL|Online Competitions in Pokémon Champions|Monthly Challenge Series August 2026}}-->
+|sdate = June 17, 2026
+|stime = 02:00
+|edate = September 2, 2026
+|etime = 01:59
+|days = 76
+}}
+
+'''Regulation Set M-B''' was the second set of organized play rules in [[Pokémon Champions]]. It was used for the first time from June 17, 2026 until September 2, 2026.
+
+==Ruleset==
+The season adopts the following ruleset:
+* Eligibility is limited to the Pokémon listed below
+* Pokémon may hold [[held item]]s, however duplicate held items are not allowed.
+* [[Mega Evolution]] is enabled for select Pokémon (''see list below''), however a player may only Mega Evolve once per battle.
+* Timers are set as follows:
+** Total time limit per game: 20 minutes
+** Player timer per game: 7 minutes
+** Turn time: 45 seconds
+** Preview time: 90 seconds
+{{-}}
+
+==Eligible Pokémon==
+{{Flexheader|gap=2px|class=roundy blacklinks c|extra-style=margin:auto; padding:3px; border:2px solid #{{Champions color dark}}; background:#{{Champions color}}; }}
+{{CPCard|0003|Venusaur}}
+{{CPCard|0006|Charizard}}
+{{CPCard|0009|Blastoise}}
+{{CPCard|0015|Beedrill}}
+{{CPCard|0018|Pidgeot}}
+{{CPCard|0024|Arbok}}
+{{CPCard|0025|Pikachu}}
+{{CPCard|0026|Raichu}}
+{{CPCard|0026|Raichu|ig=-Alola|name=[[Raichu (Pokémon)|Raichu<br><small>(Alolan Form)</small>]]}}
+{{CPCard|0036|Clefable}}
+{{CPCard|0038|Ninetales}}
+{{CPCard|0038|Ninetales|ig=-Alola|name=[[Ninetales (Pokémon)|Ninetales<br><small>(Alolan Form)</small>]]}}
+{{CPCard|0045|Vileplume}}
+{{CPCard|0059|Arcanine}}
+{{CPCard|0059|Arcanine|ig=-Hisui|name=[[Arcanine (Pokémon)|Arcanine<br><small>(Hisuian Form)</small>]]}}
+{{CPCard|0065|Alakazam}}
+{{CPCard|0068|Machamp}}
+{{CPCard|0071|Victreebel}}
+{{CPCard|0080|Slowbro}}
+{{CPCard|0080|Slowbro|ig=-Galar|name=[[Slowbro (Pokémon)|Slowbro<br><small>(Galarian Form)</small>]]}}
+{{CPCard|0094|Gengar}}
+{{CPCard|0115|Kangaskhan}}
+{{CPCard|0121|Starmie}}
+{{CPCard|0127|Pinsir}}
+{{CPCard|0128|Tauros}}
+{{CPCard|0128|Tauros|ig=-Paldea Combat|name=[[Tauros (Pokémon)|Tauros<br><small>(Paldean Form<br>(Combat Breed))</small>]]}}
+{{CPCard|0128|Tauros|ig=-Paldea Blaze|name=[[Tauros (Pokémon)|Tauros<br><small>(Paldean Form<br>(Blaze Breed))</small>]]}}
+{{CPCard|0128|Tauros|ig=-Paldea Aqua|name=[[Tauros (Pokémon)|Tauros<br><small>(Paldean Form<br>(Aqua Breed))</small>]]}}
+{{CPCard|0130|Gyarados}}
+{{CPCard|0132|Ditto}}
+{{CPCard|0134|Vaporeon}}
+{{CPCard|0135|Jolteon}}
+{{CPCard|0136|Flareon}}
+{{CPCard|0142|Aerodactyl}}
+{{CPCard|0143|Snorlax}}
+{{CPCard|0149|Dragonite}}
+{{CPCard|0154|Meganium}}
+{{CPCard|0157|Typhlosion}}
+{{CPCard|0157|Typhlosion|ig=-Hisui|name=[[Typhlosion (Pokémon)|Typhlosion<br><small>(Hisuian Form)</small>]]}}
+{{CPCard|0160|Feraligatr}}
+{{CPCard|0168|Ariados}}
+{{CPCard|0181|Ampharos}}
+{{CPCard|0184|Azumarill}}
+{{CPCard|0186|Politoed}}
+{{CPCard|0196|Espeon}}
+{{CPCard|0197|Umbreon}}
+{{CPCard|0199|Slowking}}
+{{CPCard|0199|Slowking|ig=-Galar|name=[[Slowking (Pokémon)|Slowking<br><small>(Galarian Form)</small>]]}}
+{{CPCard|0205|Forretress}}
+{{CPCard|0208|Steelix}}
+{{CPCard|0211|Qwilfish}}
+{{CPCard|0212|Scizor}}
+{{CPCard|0214|Heracross}}
+{{CPCard|0227|Skarmory}}
+{{CPCard|0229|Houndoom}}
+{{CPCard|0248|Tyranitar}}
+{{CPCard|0254|Sceptile}}
+{{CPCard|0257|Blaziken}}
+{{CPCard|0260|Swampert}}
+{{CPCard|0279|Pelipper}}
+{{CPCard|0282|Gardevoir}}
+{{CPCard|0302|Sableye}}
+{{CPCard|0303|Mawile}}
+{{CPCard|0306|Aggron}}
+{{CPCard|0308|Medicham}}
+{{CPCard|0310|Manectric}}
+{{CPCard|0319|Sharpedo}}
+{{CPCard|0323|Camerupt}}
+{{CPCard|0324|Torkoal}}
+{{CPCard|0334|Altaria}}
+{{CPCard|0350|Milotic}}
+{{CPCard|0351|Castform}}
+{{CPCard|0354|Banette}}
+{{CPCard|0358|Chimecho}}
+{{CPCard|0359|Absol}}
+{{CPCard|0362|Glalie}}
+{{CPCard|0376|Metagross}}
+{{CPCard|0389|Torterra}}
+{{CPCard|0392|Infernape}}
+{{CPCard|0395|Empoleon}}
+{{CPCard|0398|Staraptor}}
+{{CPCard|0405|Luxray}}
+{{CPCard|0407|Roserade}}
+{{CPCard|0409|Rampardos}}
+{{CPCard|0411|Bastiodon}}
+{{CPCard|0428|Lopunny}}
+{{CPCard|0442|Spiritomb}}
+{{CPCard|0445|Garchomp}}
+{{CPCard|0448|Lucario}}
+{{CPCard|0450|Hippowdon}}
+{{CPCard|0454|Toxicroak}}
+{{CPCard|0460|Abomasnow}}
+{{CPCard|0461|Weavile}}
+{{CPCard|0464|Rhyperior}}
+{{CPCard|0470|Leafeon}}
+{{CPCard|0471|Glaceon}}
+{{CPCard|0472|Gliscor}}
+{{CPCard|0473|Mamoswine}}
+{{CPCard|0475|Gallade}}
+{{CPCard|0478|Froslass}}
+{{CPCard|0479|Rotom}}
+{{CPCard|0479|Rotom|ig=-Heat|name=[[Rotom (Pokémon)|Rotom<br><small>(Heat Rotom)</small>]]}}
+{{CPCard|0479|Rotom|ig=-Wash|name=[[Rotom (Pokémon)|Rotom<br><small>(Wash Rotom)</small>]]}}
+{{CPCard|0479|Rotom|ig=-Frost|name=[[Rotom (Pokémon)|Rotom<br><small>(Frost Rotom)</small>]]}}
+{{CPCard|0479|Rotom|ig=-Fan|name=[[Rotom (Pokémon)|Rotom<br><small>(Fan Rotom)</small>]]}}
+{{CPCard|0479|Rotom|ig=-Mow|name=[[Rotom (Pokémon)|Rotom<br><small>(Mow Rotom)</small>]]}}
+{{CPCard|0497|Serperior}}
+{{CPCard|0500|Emboar}}
+{{CPCard|0503|Samurott}}
+{{CPCard|0503|Samurott|ig=-Hisui|name=[[Samurott (Pokémon)|Samurott<br><small>(Hisuian Form)</small>]]}}
+{{CPCard|0505|Watchog}}
+{{CPCard|0510|Liepard}}
+{{CPCard|0512|Simisage}}
+{{CPCard|0514|Simisear}}
+{{CPCard|0516|Simipour}}
+{{CPCard|0518|Musharna}}
+{{CPCard|0530|Excadrill}}
+{{CPCard|0531|Audino}}
+{{CPCard|0534|Conkeldurr}}
+{{CPCard|0545|Scolipede}}
+{{CPCard|0547|Whimsicott}}
+{{CPCard|0553|Krookodile}}
+{{CPCard|0560|Scrafty}}
+{{CPCard|0563|Cofagrigus}}
+{{CPCard|0569|Garbodor}}
+{{CPCard|0571|Zoroark}}
+{{CPCard|0571|Zoroark|ig=-Hisui|name=[[Zoroark (Pokémon)|Zoroark<br><small>(Hisuian Form)</small>]]}}
+{{CPCard|0579|Reuniclus}}
+{{CPCard|0584|Vanilluxe}}
+{{CPCard|0587|Emolga}}
+{{CPCard|0604|Eelektross}}
+{{CPCard|0609|Chandelure}}
+{{CPCard|0614|Beartic}}
+{{CPCard|0618|Stunfisk}}
+{{CPCard|0618|Stunfisk|ig=-Galar|name=[[Stunfisk (Pokémon)|Stunfisk<br><small>(Galarian Form)</small>]]}}
+{{CPCard|0623|Golurk}}
+{{CPCard|0635|Hydreigon}}
+{{CPCard|0637|Volcarona}}
+{{CPCard|0652|Chesnaught}}
+{{CPCard|0655|Delphox}}
+{{CPCard|0658|Greninja}}
+{{CPCard|0660|Diggersby}}
+{{CPCard|0663|Talonflame}}
+{{CPCard|0666|Vivillon|ig=-Fancy}}
+{{CPCard|0668|Pyroar}}
+{{CPCard|0670|Floette|ig=-Eternal}}
+{{CPCard|0671|Florges}}
+{{CPCard|0675|Pangoro}}
+{{CPCard|0676|Furfrou}}
+{{CPCard|0678|Meowstic|name=[[Meowstic (Pokémon)|Meowstic<br><small>(Male)</small>]]}}
+{{CPCard|0678|Meowstic|ig=-Female|name=[[Meowstic (Pokémon)|Meowstic<br><small>(Female)</small>]]}}
+{{CPCard|0681|Aegislash}}
+{{CPCard|0683|Aromatisse}}
+{{CPCard|0685|Slurpuff}}
+{{CPCard|0687|Malamar}}
+{{CPCard|0689|Barbaracle}}
+{{CPCard|0691|Dragalge}}
+{{CPCard|0693|Clawitzer}}
+{{CPCard|0695|Heliolisk}}
+{{CPCard|0697|Tyrantrum}}
+{{CPCard|0699|Aurorus}}
+{{CPCard|0700|Sylveon}}
+{{CPCard|0701|Hawlucha}}
+{{CPCard|0702|Dedenne}}
+{{CPCard|0706|Goodra}}
+{{CPCard|0706|Goodra|ig=-Hisui|name=[[Goodra (Pokémon)|Goodra<br><small>(Hisuian Form)</small>]]}}
+{{CPCard|0707|Klefki}}
+{{CPCard|0709|Trevenant}}
+{{CPCard|0711|Gourgeist|name=[[Gourgeist (Pokémon)|Gourgeist<br><small>(Medium Variety)</small>]]}}
+{{CPCard|0711|Gourgeist|ig=-Small|name=[[Gourgeist (Pokémon)|Gourgeist<br><small>(Small Variety)</small>]]}}
+{{CPCard|0711|Gourgeist|ig=-Large|name=[[Gourgeist (Pokémon)|Gourgeist<br><small>(Large Variety)</small>]]}}
+{{CPCard|0711|Gourgeist|ig=-Jumbo|name=[[Gourgeist (Pokémon)|Gourgeist<br><small>(Jumbo Variety)</small>]]}}
+{{CPCard|0713|Avalugg}}
+{{CPCard|0713|Avalugg|ig=-Hisui|name=[[Avalugg (Pokémon)|Avalugg <br><small>(Hisuian Form)</small>]]}}
+{{CPCard|0715|Noivern}}
+{{CPCard|0724|Decidueye}}
+{{CPCard|0724|Decidueye|ig=-Hisui|name=[[Decidueye (Pokémon)|Decidueye <br><small>(Hisuian Form)</small>]]}}
+{{CPCard|0727|Incineroar}}
+{{CPCard|0730|Primarina}}
+{{CPCard|0733|Toucannon}}
+{{CPCard|0740|Crabominable}}
+{{CPCard|0745|Lycanroc|name=[[Lycanroc (Pokémon)|Lycanroc<br><small>(Midday Form)</small>]]}}
+{{CPCard|0745|Lycanroc|ig=-Midnight|name=[[Lycanroc (Pokémon)|Lycanroc<br><small>(Midnight Form)</small>]]}}
+{{CPCard|0745|Lycanroc|ig=-Dusk|name=[[Lycanroc (Pokémon)|Lycanroc<br><small>(Dusk Form)</small>]]}}
+{{CPCard|0748|Toxapex}}
+{{CPCard|0750|Mudsdale}}
+{{CPCard|0752|Araquanid}}
+{{CPCard|0758|Salazzle}}
+{{CPCard|0763|Tsareena}}
+{{CPCard|0765|Oranguru}}
+{{CPCard|0766|Passimian}}
+{{CPCard|0778|Mimikyu}}
+{{CPCard|0780|Drampa}}
+{{CPCard|0784|Kommo-o}}
+{{CPCard|0823|Corviknight}}
+{{CPCard|0841|Flapple}}
+{{CPCard|0842|Appletun}}
+{{CPCard|0844|Sandaconda}}
+{{CPCard|0855|Polteageist}}
+{{CPCard|0858|Hatterene}}
+{{CPCard|0861|Grimmsnarl}}
+{{CPCard|0866|Mr. Rime}}
+{{CPCard|0867|Runerigus}}
+{{CPCard|0869|Alcremie}}
+{{CPCard|0870|Falinks}}
+{{CPCard|0877|Morpeko}}
+{{CPCard|0887|Dragapult}}
+{{CPCard|0899|Wyrdeer}}
+{{CPCard|0900|Kleavor}}
+{{CPCard|0902|Basculegion|name=[[Basculegion (Pokémon)|Basculegion<br><small>(Male)</small>]]}}
+{{CPCard|0902|Basculegion|ig=-Female|name=[[Basculegion (Pokémon)|Basculegion<br><small>(Female)</small>]]}}
+{{CPCard|0903|Sneasler}}
+{{CPCard|0904|Overqwil}}
+{{CPCard|0908|Meowscarada}}
+{{CPCard|0911|Skeledirge}}
+{{CPCard|0914|Quaquaval}}
+{{CPCard|0925|Maushold}}
+{{CPCard|0934|Garganacl}}
+{{CPCard|0936|Armarouge}}
+{{CPCard|0937|Ceruledge}}
+{{CPCard|0939|Bellibolt}}
+{{CPCard|0952|Scovillain}}
+{{CPCard|0956|Espathra}}
+{{CPCard|0959|Tinkaton}}
+{{CPCard|0964|Palafin}}
+{{CPCard|0968|Orthworm}}
+{{CPCard|0970|Glimmora}}
+{{CPCard|0972|Houndstone}}
+{{CPCard|0979|Annihilape}}
+{{CPCard|0981|Farigiraf}}
+{{CPCard|0983|Kingambit}}
+{{CPCard|1000|Gholdengo}}
+{{CPCard|1013|Sinistcha}}
+{{CPCard|1018|Archaludon}}
+{{CPCard|1019|Hydrapple}}
+{{Flexfooter}}
+
+===Mega Evolutions===
+The following [[Mega Evolution]]s are legal in the ruleset:
+{{Flexheader|gap=2px|class=roundy blacklinks c|extra-style=margin:auto; padding:3px; border:2px solid #{{Champions color dark}}; background:#{{Champions color}}; }}
+{{CPCard|0003|Venusaur|ig=-Mega}}
+{{CPCard|0006|Charizard|ig=-Mega X|name=[[Charizard (Pokémon)|Mega Charizard X]]}}
+{{CPCard|0006|Charizard|ig=-Mega Y|name=[[Charizard (Pokémon)|Mega Charizard Y]]}}
+{{CPCard|0009|Blastoise|ig=-Mega}}
+{{CPCard|0015|Beedrill|ig=-Mega}}
+{{CPCard|0018|Pidgeot|ig=-Mega}}
+{{CPCard|0026|Raichu|ig=-Mega X|name=[[Raichu (Pokémon)|Mega Raichu X]]}}
+{{CPCard|0026|Raichu|ig=-Mega Y|name=[[Raichu (Pokémon)|Mega Raichu Y]]}}
+{{CPCard|0036|Clefable|ig=-Mega}}
+{{CPCard|0065|Alakazam|ig=-Mega}}
+{{CPCard|0071|Victreebel|ig=-Mega}}
+{{CPCard|0080|Slowbro|ig=-Mega}}
+{{CPCard|0094|Gengar|ig=-Mega}}
+{{CPCard|0115|Kangaskhan|ig=-Mega}}
+{{CPCard|0121|Starmie|ig=-Mega}}
+{{CPCard|0127|Pinsir|ig=-Mega}}
+{{CPCard|0130|Gyarados|ig=-Mega}}
+{{CPCard|0142|Aerodactyl|ig=-Mega}}
+{{CPCard|0149|Dragonite|ig=-Mega}}
+{{CPCard|0154|Meganium|ig=-Mega}}
+{{CPCard|0160|Feraligatr|ig=-Mega}}
+{{CPCard|0181|Ampharos|ig=-Mega}}
+{{CPCard|0208|Steelix|ig=-Mega}}
+{{CPCard|0212|Scizor|ig=-Mega}}
+{{CPCard|0214|Heracross|ig=-Mega}}
+{{CPCard|0227|Skarmory|ig=-Mega}}
+{{CPCard|0229|Houndoom|ig=-Mega}}
+{{CPCard|0248|Tyranitar|ig=-Mega}}
+{{CPCard|0254|Sceptile|ig=-Mega}}
+{{CPCard|0257|Blaziken|ig=-Mega}}
+{{CPCard|0260|Swampert|ig=-Mega}}
+{{CPCard|0282|Gardevoir|ig=-Mega}}
+{{CPCard|0302|Sableye|ig=-Mega}}
+{{CPCard|0303|Mawile|ig=-Mega}}
+{{CPCard|0306|Aggron|ig=-Mega}}
+{{CPCard|0308|Medicham|ig=-Mega}}
+{{CPCard|0310|Manectric|ig=-Mega}}
+{{CPCard|0319|Sharpedo|ig=-Mega}}
+{{CPCard|0323|Camerupt|ig=-Mega}}
+{{CPCard|0334|Altaria|ig=-Mega}}
+{{CPCard|0354|Banette|ig=-Mega}}
+{{CPCard|0358|Chimecho|ig=-Mega}}
+{{CPCard|0359|Absol|ig=-Mega}}
+{{CPCard|0362|Glalie|ig=-Mega}}
+{{CPCard|0376|Metagross|ig=-Mega}}
+{{CPCard|0398|Staraptor|ig=-Mega}}
+{{CPCard|0428|Lopunny|ig=-Mega}}
+{{CPCard|0445|Garchomp|ig=-Mega}}
+{{CPCard|0448|Lucario|ig=-Mega}}
+{{CPCard|0460|Abomasnow|ig=-Mega}}
+{{CPCard|0475|Gallade|ig=-Mega}}
+{{CPCard|0478|Froslass|ig=-Mega}}
+{{CPCard|0500|Emboar|ig=-Mega}}
+{{CPCard|0530|Excadrill|ig=-Mega}}
+{{CPCard|0531|Audino|ig=-Mega}}
+{{CPCard|0545|Scolipede|ig=-Mega}}
+{{CPCard|0560|Scrafty|ig=-Mega}}
+{{CPCard|0604|Eelektross|ig=-Mega}}
+{{CPCard|0609|Chandelure|ig=-Mega}}
+{{CPCard|0623|Golurk|ig=-Mega}}
+{{CPCard|0652|Chesnaught|ig=-Mega}}
+{{CPCard|0655|Delphox|ig=-Mega}}
+{{CPCard|0658|Greninja|ig=-Mega}}
+{{CPCard|0668|Pyroar|ig=-Mega}}
+{{CPCard|0670|Floette|ig=-Mega}}
+{{CPCard|0678|Meowstic|ig=-Mega}}
+{{CPCard|0687|Malamar|ig=-Mega}}
+{{CPCard|0689|Barbaracle|ig=-Mega}}
+{{CPCard|0691|Dragalge|ig=-Mega}}
+{{CPCard|0701|Hawlucha|ig=-Mega}}
+{{CPCard|0740|Crabominable|ig=-Mega}}
+{{CPCard|0780|Drampa|ig=-Mega}}
+{{CPCard|0870|Falinks|ig=-Mega}}
+{{CPCard|0952|Scovillain|ig=-Mega}}
+{{CPCard|0970|Glimmora|ig=-Mega}}
+{{Flexfooter}}
+
+==Related articles==
+
+{{Regulations}}
+{{Online battles}}
+{{Project Games notice}}
+
+[[Category:Ranked Battles regulations|M-B]]
+
+[[de:Regelsatz M-B]]
+[[es:Reglamento M-B]]
+[[ja:レギュレーションM-B]]
