@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  # Static pages land here. `npm run build` also runs the `postbuild` script, which
+  # writes the Pagefind search index into dist/pagefind.
+  publish = "dist"
+
+[build.environment]
+  # Astro 4 requires Node 18+; pin so a Netlify default change can't break the build.
+  NODE_VERSION = "20"
+
+# The SSR function is emitted by @astrojs/netlify into .netlify/functions-internal and
+# declares its own routing (path "/*", preferStatic true), so static files are served
+# directly and only /api/draft/* actually invokes it. No redirects needed here.

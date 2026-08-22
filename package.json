@@ -8,10 +8,13 @@
 		"build": "astro build",
 		"postbuild": "pagefind --site dist",
 		"preview": "astro preview",
-		"astro": "astro"
+		"astro": "astro",
+		"test": "node --test src/draft/lib/*.test.mjs",
+		"build:pool": "node scripts/build-pool.mjs"
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^2.3.1",
+		"@astrojs/netlify": "5.2.1",
 		"@astrojs/react": "^3.6.0",
 		"@astrojs/rss": "^4.0.5",
 		"@astrojs/sitemap": "^3.1.1",
@@ -21,6 +24,7 @@
 		"@tailwindcss/typography": "^0.5.10",
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
+		"@upstash/redis": "^1.38.2",
 		"@vis.gl/react-google-maps": "^1.8.3",
 		"astro": "^4.4.8",
 		"dayjs": "^1.11.10",

@@ -1,0 +1,27 @@
+---
+// Unlisted: no nav link, excluded from the sitemap (see astro.config.mjs), and
+// noindex'd below. Shared by room-code link only.
+import DraftApp from '../draft/DraftApp'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Reg M-B Auction Draft</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  </head>
+  <body>
+    <DraftApp client:only="react" />
+  </body>
+</html>
+
+<style is:global>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #0d1117;
+  }
+</style>
