@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro'
 
-import { POOL } from '../../../draft/data/pool.js'
+import { POOL } from './data/pool.js'
 import {
   DraftError,
   isPersistent,
@@ -9,7 +9,7 @@ import {
   mutate,
   newToken,
   reserveRoom,
-} from '../../../server/draftStore.js'
+} from '../server/draftStore.js'
 import {
   applyBid,
   applyElapsed,
@@ -27,7 +27,7 @@ import {
   undoLastPick,
   validateBid,
   validateNomination,
-} from '../../../draft/lib/rules.js'
+} from './lib/rules.js'
 
 // This is the only part of the site that runs on a server; everything else stays
 // statically prerendered.

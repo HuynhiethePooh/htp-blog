@@ -15,15 +15,36 @@ import react from "@astrojs/react";
 // `Missing "./env/setup" specifier in "astro" package`.
 import netlify from "@astrojs/netlify";
 
+// The auction draft is the only server-rendered thing on this site, and it is off by
+// default. Set DRAFT_ENABLED=true in the Netlify UI (or your shell) to turn it back on.
+//
+// This is a hard off switch, not just a hidden page: with no `prerender = false` route
+// left, `output` drops to 'static' and @astrojs/netlify emits no SSR function at all
+// (see its astro:build:done hook). Nothing on the site can burn a function invocation
+// while the flag is off -- not the draft, and not bot traffic probing for /wp-login.php.
+const DRAFT_ENABLED = process.env.DRAFT_ENABLED === 'true';
+
+/** Mounts the draft's page and API only when the flag is on. */
+const draftRoutes = () => ({
+  name: 'draft-routes',
+  hooks: {
+    'astro:config:setup': ({ injectRoute }) => {
+      if (!DRAFT_ENABLED) return;
+      injectRoute({ pattern: '/draft', entrypoint: './src/draft/page.astro' });
+      injectRoute({ pattern: '/api/draft/[action]', entrypoint: './src/draft/api.ts', prerender: false });
+    },
+  },
+});
+
 // https://astro.build/config
 export default defineConfig({
   // Site Information
   site: 'https://huynhiethepooh.netlify.app',
   trailingSlash: 'never',
-  // 'hybrid' keeps every blog page prerendered as static HTML. Only routes that opt out
-  // with `export const prerender = false` become Netlify Functions -- currently just
-  // the draft API under /api/draft.
-  output: 'hybrid',
+  // Every blog page is prerendered either way. 'hybrid' only buys the ability for a
+  // route to opt out with `export const prerender = false`, which only the draft API
+  // does -- so with the draft off there is nothing for a server to render.
+  output: DRAFT_ENABLED ? 'hybrid' : 'static',
   adapter: netlify(),
   prefetch: {
     prefetchAll: true
@@ -35,6 +56,8 @@ export default defineConfig({
   },
   // Third-party Integrations
   integrations: [
+  // Draft page + API, mounted only when DRAFT_ENABLED=true.
+  draftRoutes(),
   // Tailwind CSS for styling
   tailwind(),
   // Sitemap generator. The draft is unlisted -- keeping it out of the sitemap is the

@@ -32,7 +32,10 @@ export default function DraftApp() {
     setReady(true)
   }, [])
 
-  const { state, error: streamError, connected, serverNow, apply } = useDraftState(room, session?.token)
+  const { state, error: streamError, connected, stale, reconnect, serverNow, apply } = useDraftState(
+    room,
+    session?.token
+  )
 
   // Tick locally so the countdown moves smoothly between polls.
   useTicker(Boolean(state?.auction) && state?.status === 'drafting')
@@ -188,9 +191,21 @@ export default function DraftApp() {
   const isAdmin = Boolean(session?.adminToken)
   const now = serverNow()
 
+  // The poll loop parks itself once a room has been quiet for a while, so an
+  // abandoned tab stops costing us. Getting live again is one click.
+  const staleBanner = stale ? (
+    <Notice kind="warn">
+      Live updates paused after a quiet spell.{' '}
+      <button type="button" className="btn-inline" onClick={reconnect}>
+        Reconnect
+      </button>
+    </Notice>
+  ) : null
+
   if (state.status === 'lobby') {
     return (
       <div className="draft-root">
+        {staleBanner}
         <Lobby
           state={state}
           you={you}
@@ -212,6 +227,7 @@ export default function DraftApp() {
   return (
     <div className="draft-root">
       <div className="draft-shell">
+        {staleBanner}
         <div className="draft-topbar">
           <div className="topbar-id">
             <span className="room-code">{state.room}</span>

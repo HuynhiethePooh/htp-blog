@@ -7,6 +7,13 @@ const POLL_LIVE_MS = 800
 const POLL_IDLE_MS = 2500
 const POLL_HIDDEN_MS = 10_000
 
+// An idle room is the expensive case: every client polling it burns a serverless
+// invocation to be told "nothing changed". Back off geometrically from POLL_IDLE_MS
+// while the version holds still, and give up entirely once the room has been quiet
+// for STALE_AFTER_MS -- an abandoned tab should cost nothing at all.
+const POLL_IDLE_MAX_MS = 30_000
+const STALE_AFTER_MS = 10 * 60 * 1000
+
 export class ApiError extends Error {
   constructor(message, status, payload) {
     super(message)
@@ -84,37 +91,92 @@ export function clearSession(room) {
  * into server time. Every countdown in the UI goes through it: the server owns the
  * deadline, and a viewer whose laptop clock is three minutes fast must still see the
  * same time remaining as everyone else.
+ *
+ * The loop is deliberately quiet when nothing is happening. It stops outright once the
+ * draft is `done`, and parks itself (`stale`, cleared by `reconnect()`) after
+ * STALE_AFTER_MS with no change, so a tab left open overnight stops billing us.
  */
 export function useDraftState(room, token) {
   const [state, setState] = useState(null)
   const [error, setError] = useState(null)
   const [connected, setConnected] = useState(true)
+  const [stale, setStale] = useState(false)
 
   const versionRef = useRef(-1)
   const skewRef = useRef(0)
   const tokenRef = useRef(token)
   tokenRef.current = token
 
+  // Read by nextDelay() on every tick. These have to be refs, not the `state` variable:
+  // the poll loop is set up once per room, so anything it closes over is frozen at the
+  // value it had when the room was joined.
+  const stateRef = useRef(null)
+  const missesRef = useRef(0)
+  const quietSinceRef = useRef(Date.now())
+  const wakeRef = useRef(null)
+
   /** Server time, estimated from the last response we saw. */
   const serverNow = useCallback(() => Date.now() + skewRef.current, [])
 
   const absorb = useCallback((payload) => {
-    if (!payload) return
-    if (typeof payload.version === 'number') versionRef.current = payload.version
+    if (!payload) return false
     const now = payload.now ?? payload.state?.now
     if (typeof now === 'number') skewRef.current = now - Date.now()
-    if (payload.state) setState(payload.state)
+
+    const changed = typeof payload.version === 'number' && payload.version !== versionRef.current
+    if (typeof payload.version === 'number') versionRef.current = payload.version
+    if (payload.state) {
+      stateRef.current = payload.state
+      setState(payload.state)
+    }
+
+    if (changed) {
+      missesRef.current = 0
+      quietSinceRef.current = Date.now()
+    } else {
+      missesRef.current += 1
+    }
+    return changed
+  }, [])
+
+  /** Treat this instant as activity: poll fast again, and un-park a stale loop. */
+  const markActive = useCallback(() => {
+    missesRef.current = 0
+    quietSinceRef.current = Date.now()
+    setStale(false)
   }, [])
 
   // Let callers fold a mutation's response straight into local state, so the board
   // updates the instant your own bid lands instead of on the next poll.
-  const apply = useCallback((payload) => absorb(payload), [absorb])
+  const apply = useCallback(
+    (payload) => {
+      absorb(payload)
+      markActive()
+      wakeRef.current?.()
+    },
+    [absorb, markActive]
+  )
+
+  /** Restart a loop that parked itself. Wired to the "Reconnect" button. */
+  const reconnect = useCallback(() => {
+    markActive()
+    wakeRef.current?.()
+  }, [markActive])
 
   useEffect(() => {
     if (!room) return undefined
 
     let cancelled = false
     let timer = null
+
+    const nextDelay = () => {
+      if (typeof document !== 'undefined' && document.hidden) return POLL_HIDDEN_MS
+      const current = stateRef.current
+      if (current?.auction && current.status === 'drafting') return POLL_LIVE_MS
+      // Geometric backoff, capped. Reset to POLL_IDLE_MS by any change or user action.
+      const backoff = POLL_IDLE_MS * 2 ** Math.min(missesRef.current, 8)
+      return Math.min(backoff, POLL_IDLE_MAX_MS)
+    }
 
     const tick = async () => {
       if (cancelled) return
@@ -131,37 +193,51 @@ export function useDraftState(room, token) {
           return // stop polling a room that does not exist
         }
         setConnected(false)
+        missesRef.current += 1
       }
-      if (!cancelled) timer = setTimeout(tick, nextDelay())
+      if (cancelled) return
+
+      // The draft is over. Nothing can change again, so stop asking forever.
+      if (stateRef.current?.status === 'done') return
+
+      // Nobody has touched this room in a long time -- assume the tab was abandoned
+      // and wait for a human to ask for more.
+      if (Date.now() - quietSinceRef.current >= STALE_AFTER_MS) {
+        setStale(true)
+        return
+      }
+
+      timer = setTimeout(tick, nextDelay())
     }
 
-    const nextDelay = () => {
-      if (typeof document !== 'undefined' && document.hidden) return POLL_HIDDEN_MS
-      return state?.auction && state.status === 'drafting' ? POLL_LIVE_MS : POLL_IDLE_MS
+    const start = () => {
+      if (cancelled) return
+      clearTimeout(timer)
+      tick()
     }
+    wakeRef.current = start
 
-    tick()
+    start()
 
     // Coming back to the tab should feel instant, not "wait for the slow timer".
+    // Focusing the tab is also a sign of life, so it resets the backoff and the
+    // abandonment clock.
     const onVisible = () => {
-      if (!document.hidden) {
-        clearTimeout(timer)
-        tick()
-      }
+      if (document.hidden) return
+      markActive()
+      start()
     }
     document.addEventListener('visibilitychange', onVisible)
 
     return () => {
       cancelled = true
+      wakeRef.current = null
       clearTimeout(timer)
       document.removeEventListener('visibilitychange', onVisible)
     }
-    // `state` is intentionally excluded: re-subscribing on every state change would
-    // restart the poll loop constantly. nextDelay() reads it via closure on each tick.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [room, absorb])
+  }, [room, absorb, markActive])
 
-  return { state, error, connected, serverNow, apply, setState }
+  return { state, error, connected, stale, reconnect, serverNow, apply }
 }
 
 /**
